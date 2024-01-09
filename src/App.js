@@ -1,12 +1,14 @@
 import logo from './logo.svg';
 import Nvn from './Nvn';
+import Counter from './Counter';
 
 function App() {
   return (
-    <div className="App">
+    <div className="mybox">
       <header className="App-header">
-        <Nvn>
-        </Nvn>
+        <Counter></Counter>
+        <Counter></Counter>
+        <Counter></Counter>
       </header>
     </div>
   );
