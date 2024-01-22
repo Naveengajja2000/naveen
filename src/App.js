@@ -3,15 +3,11 @@ import Nvn from './Nvn';
 import Todolist from './Todolist';
 
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-       <Todolist></Todolist>
-       
-       
-      </header>
-    </div>
+import Userform from "./Form to table";
+
+function App(){
+  return(
+    <Userform></Userform>
   );
 }
 
