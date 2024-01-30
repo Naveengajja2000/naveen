@@ -1,14 +1,12 @@
-import logo from './logo.svg';
-import Nvn from './Nvn';
+import store from "./store/store";
+import {Provider}  from "react-redux";
+import TodoList from "./Todolist"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Nvn>
-        </Nvn>
-      </header>
-    </div>
+   <Provider store={store}>
+    <TodoList></TodoList>
+   </Provider>
   );
 }
 
