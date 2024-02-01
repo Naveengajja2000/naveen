@@ -1,14 +1,14 @@
-import logo from './logo.svg';
-import Nvn from './Nvn';
+
+import Header from './header';
+import Products from './products';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Nvn>
-        </Nvn>
-      </header>
-    </div>
+   <div  className="border border-4 border-danger p-2 w-100">
+    <h1 className='bg-danger'>Welcome to my Products</h1>
+    <Header></Header>
+    <Products></Products>
+   </div>
   );
 }
 
