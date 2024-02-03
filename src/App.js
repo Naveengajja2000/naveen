@@ -1,14 +1,12 @@
-import logo from './logo.svg';
-import Nvn from './Nvn';
+import Counter from './features/counter/Counter.jsx';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Nvn>
-        </Nvn>
-      </header>
-    </div>
+   <div className="border border-5 border-info m-2 p-2">
+    <h1>Welcome to Redux Toolkit Intro</h1>
+    <Counter></Counter>
+   </div>
   );
 }
 
