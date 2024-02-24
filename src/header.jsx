@@ -2,7 +2,7 @@ import React from "react";
 function Header() {
     return (
 
-        <nav className="navbar navbar-expand-lg navbar-light bg-info ">
+        <nav className="navbar navbar-expand-lg navbar-light bg-info rounded">
 
         <div className="collapse navbar-collapse d-flex flex-wrap justify-content-around" id="navbarSupportedContent ">
 
@@ -10,7 +10,7 @@ function Header() {
             <div>CONTACT </div>
             <div>ABOUT US</div>
             <div>
-                <input className="rounded " placeholder="Search..." type="text" name="" id="" />
+                <input className="rounded " placeholder="Search..." type="text" name="mens" id="" />
             </div>
 
 

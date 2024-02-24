@@ -57,27 +57,29 @@ function Products(){
         setCart([...temp])
     }
     return(
-        <div className=" d-flex flex-wrap border border-4 border-info p-2 w-100">
-            <div className="w-50">
+        <div className=" d-flex flex-wrap border border-4 border-info p-2 w-100 rounded">
+            <div className="w-50 d-flex flex-wrap ">
                 {products.length>0 &&(
                     products.map((product)=>{
-                        return <div className="border m-2 p-2">
-                            <img src={product.image} width="100px" height='100px'  alt=""/>
-                            <div className="p-1 bg-warning">
-                                <h4>{product.title}</h4>
-                                <h3>{product.price}</h3>
+                        return <div className="border p-2 w-50 text-center">
+                           <div className="">
+                           <img src={product.image} width="100px" height='100px'  alt="" className="rounded"/>
+                            <div className="p-1 bg-warning rounded ">
+                                <h5>{product.title.slice(0,20)}</h5>
+                                <h6>{product.price}</h6>
                                 {
                                     isProductInCart(product) &&( 
-                                    <>
-                                    <button onClick={()=>{decCount(product)}}>-</button>
+                                    <div>
+                                    <button className="btn btn-secondary rounded" onClick={()=>{decCount(product)}}>-</button>
                                     <b>{getCartProductCount(product)}</b>
-                                    <button onClick={()=>{incCount(product)}}>+</button>
-                                    </>)
+                                    <button className="btn btn-secondary rounded" onClick={()=>{incCount(product)}}>+</button>
+                                    </div>)
                                 }
                                 {
-                                    !isProductInCart(product) && (<button onClick={()=>{addToCart(product)}}>Add to Cart</button>)
+                                    !isProductInCart(product) && (<button className="btn btn-success rounded " onClick={()=>{addToCart(product)}}>Add to Cart</button>)
                                 }
                             </div>
+                           </div>
 
                             </div>
              })

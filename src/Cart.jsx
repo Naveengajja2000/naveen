@@ -5,8 +5,8 @@ function Cart(props){
                  },0)
     }
     return (
-        <div className="border border-4 border-secondary p-2 ">
-            Cart:
+        <div className="border border-4 border-secondary p-2 rounded">
+            <h1>Cart:</h1>
             {
               props.cart.map((p)=>{
                 return <li className="d-flex flex-wrap justify-content-between">
@@ -17,7 +17,7 @@ function Cart(props){
               })  
             }
             <hr/>
-            <h1 className="text-end bg-primary">Total:{getTotal()}</h1>
+            <h1 className="text-end bg-primary rounded">Total:{getTotal()}</h1>
         </div>
     )
 }
